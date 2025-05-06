@@ -22,7 +22,6 @@ void fibonacci() {
         return;
     }
 
-    
     fib[0] = 0;
     fib[1] = 1;
 
@@ -57,7 +56,7 @@ void fatoriais() {
             resultado *= j;
         }
         printf("%d! = %llu\n", i, resultado);
-    }
+    }
 }
 
 //Função 3: Gabriel
