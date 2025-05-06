@@ -58,3 +58,28 @@ void fatoriais() {
         printf("%d! = %llu\n", i, resultado);
     }
 }
+
+//Função 3: Gabriel
+void palindromo() {
+    char palavra[101];
+    int tamanho, i;
+    int ehPalindromo = 1;
+
+    printf("Digite uma palavra: ");
+    scanf("%s", palavra);
+
+    tamanho = strlen(palavra);
+
+    for (i = 0; i < tamanho / 2; i++) {
+        if (palavra[i] != palavra[tamanho - 1 - i]) {
+            ehPalindromo = 0;
+            break;
+        }
+    }
+
+    if (ehPalindromo) {
+        printf("É um palindromo.\n");
+    } else {
+        printf("Não é um palindromo.\n");
+    }
+}
