@@ -35,3 +35,26 @@ void fibonacci() {
     }
     printf("\n");
 }
+
+//Função 2: João
+void fatoriais() {
+    int n;
+    int i, j;
+    unsigned long long resultado;
+
+    printf("Digite um numero de 1 a 20: ");
+    scanf("%d", &n);
+
+    if (n < 1 || n > 20) {
+        printf("Valor invalido.\n");
+        return;
+    }
+
+    for (i = 1; i <= n; i++) {
+        resultado = 1;
+        for (j = 1; j <= i; j++) {
+            resultado *= j;
+        }
+        printf("%d! = %llu\n", i, resultado);
+    }
+}
