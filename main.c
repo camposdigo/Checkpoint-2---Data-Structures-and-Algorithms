@@ -22,6 +22,7 @@ void fibonacci() {
         return;
     }
 
+    
     fib[0] = 0;
     fib[1] = 1;
 
@@ -81,5 +82,22 @@ void palindromo() {
         printf("É um palindromo.\n");
     } else {
         printf("Não é um palindromo.\n");
+    }
+}
+
+//Função 4: Pedro
+void substring() {
+    char str1[101], str2[101];
+
+    printf("Digite a primeira string: ");
+    scanf("%s", str1);
+
+    printf("Digite a segunda string: ");
+    scanf("%s", str2);
+
+    if (strstr(str1, str2)) {
+        printf("A segunda string está contida na primeira.\n");
+    } else {
+        printf("A segunda string NÃO está contida na primeira.\n");
     }
 }
